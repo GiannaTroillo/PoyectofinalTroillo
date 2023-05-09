@@ -1,0 +1,31 @@
+/*----    ------TRAYECTORIA---------------------*/
+
+.main-trayectoria {
+    background-color: map-get($colores, "back");
+    border: map-get($colores, "border") 8px solid;
+    margin: 30px; 
+
+    section {
+        @include flex (row, space-evenly, center);
+        flex-wrap: wrap;
+
+        article p {
+            color: map-get($colores, "letras");
+            padding: 20px;
+            max-width: 600px;
+
+            &:nth-child(3) {
+                text-align: center;
+                font-weight: 500;
+                font-style: oblique;
+            }
+        }
+
+        #doctorcita {
+            width: 400px;
+            height: 490px;
+            border: map-get($colores, "border") 8px solid ;
+            margin: 15px;
+        }
+    }
+}

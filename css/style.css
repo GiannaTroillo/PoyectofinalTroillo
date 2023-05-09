@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+.back-principal {
+  background-image: url(../recursos/pecas.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+header {
+  min-height: 15vh;
+  background-image: linear-gradient(to right, #e2d4c2e8, #a87b274d, #af7b3f7e);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  header nav ul {
+    list-style: none;
+    display: flex; }
+    header nav ul .activo {
+      font-weight: 600;
+      border-radius: 3px;
+      box-shadow: 1px 2px 8px #3d3b3b81;
+      padding: 3px; }
+    header nav ul a {
+      color: #fcfbfbd5;
+      text-decoration: none;
+      padding: 0 15px;
+      margin: 8px; }
+      header nav ul a:hover {
+        font-weight: 700; }
+  header .logo {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    transition: 0.2s; }
+    header .logo:hover {
+      transition: 0.3s;
+      scale: 1.1;
+      box-shadow: 3px 3px 8px #807777; }
+  header .logo-act {
+    box-shadow: 3px 3px 8px #807777; }
+
+main {
+  min-height: 70vh; }
+  main h1 {
+    color: #fcfbfbd5;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 700;
+    text-shadow: 3px 1px 2px #3b3939;
+    padding: 30px; }
+
+footer {
+  min-height: 15vh;
+  background-image: linear-gradient(to left, #e2d4c2e8, #a87b274d, #af7b3f7e);
+  color: #fcfbfbd5;
+  font-size: 14px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; }
+  footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    footer div p:hover {
+      font-weight: 600;
+      scale: 1.05; }
+    footer div .icono {
+      width: 30px;
+      height: 30px; }
+      footer div .icono:hover {
+        scale: 1.2; }
+
+/*---------------ESTILO DEL INDEX-------------------*/
+.presentacion {
+  border: #cab38534 5px solid;
+  background-color: #f3dab527;
+  text-align: center;
+  margin: 45px;
+  margin-top: 100px; }
+  .presentacion h1 {
+    padding: 30px; }
+  .presentacion h3 {
+    color: #fcfbfbd5; }
+  .presentacion p {
+    color: #fcfbfbd5;
+    font-style: oblique;
+    padding: 25px; }
+
+/*----    ------TRAYECTORIA---------------------*/
+.main-trayectoria {
+  background-color: #f3dab527;
+  border: #cab38534 8px solid;
+  margin: 30px; }
+  .main-trayectoria section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap; }
+    .main-trayectoria section article p {
+      color: #fcfbfbd5;
+      padding: 20px;
+      max-width: 600px; }
+      .main-trayectoria section article p:nth-child(3) {
+        text-align: center;
+        font-weight: 500;
+        font-style: oblique; }
+    .main-trayectoria section #doctorcita {
+      width: 400px;
+      height: 490px;
+      border: #cab38534 8px solid;
+      margin: 15px; }
+
+/*------------------------ESPECIALIDADES----------------------*/
+.rama-esp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 10px; }
+  .rama-esp h2 {
+    color: #fcfbfbd5;
+    padding: 5px; }
+  .rama-esp li {
+    color: #fcfbfbd5;
+    list-style: none; }
+    .rama-esp li:hover {
+      font-weight: 700; }
+
+.rama-grilla {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap; }
+  .rama-grilla .grid-dc {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "imagen1 imagen2 imagen3" "imagen4 imagen5 imagen6";
+    margin: 10px;
+    width: 400px;
+    height: 350px;
+    background-color: #f3eee99a; }
+    .rama-grilla .grid-dc .imagendc {
+      margin: 5px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: 0.5s; }
+      .rama-grilla .grid-dc .imagendc:hover {
+        scale: 1.1; }
+    .rama-grilla .grid-dc .imagen1 {
+      grid-area: imagen1;
+      background-image: url(../recursos/lunar.jfif); }
+    .rama-grilla .grid-dc .imagen2 {
+      grid-area: imagen2;
+      background-image: url(../recursos/melanoma.jpg); }
+    .rama-grilla .grid-dc .imagen3 {
+      grid-area: imagen3;
+      background-image: url(../recursos/pso.jfif); }
+    .rama-grilla .grid-dc .imagen4 {
+      grid-area: imagen4;
+      background-image: url(../recursos/alopecia.jfif); }
+    .rama-grilla .grid-dc .imagen5 {
+      grid-area: imagen5;
+      background-image: url(../recursos/acne.jfif); }
+    .rama-grilla .grid-dc .imagen6 {
+      grid-area: imagen6;
+      background-image: url(../recursos/micosis.jfif); }
+  .rama-grilla .grid-de {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "imagen7 imagen8 imagen9" "imagen10 imagen11 imagen12";
+    margin: 10px;
+    width: 400px;
+    height: 350px;
+    background-color: #f3eee99a; }
+    .rama-grilla .grid-de .imagende {
+      margin: 5px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: 0.5s; }
+      .rama-grilla .grid-de .imagende:hover {
+        scale: 1.1; }
+    .rama-grilla .grid-de .imagen7 {
+      grid-area: imagen7;
+      background-image: url(../recursos/peeling-fac.jfif); }
+    .rama-grilla .grid-de .imagen8 {
+      grid-area: imagen8;
+      background-image: url(../recursos/btx.jpg); }
+    .rama-grilla .grid-de .imagen9 {
+      grid-area: imagen9;
+      background-image: url(../recursos/abdo.jpg); }
+    .rama-grilla .grid-de .imagen10 {
+      grid-area: imagen10;
+      background-image: url(../recursos/arm-fac.jpg); }
+    .rama-grilla .grid-de .imagen11 {
+      grid-area: imagen11;
+      background-image: url(../recursos/tres-2.jpg); }
+    .rama-grilla .grid-de .imagen12 {
+      grid-area: imagen12;
+      background-image: url(../recursos/labios.jpg); }
+
+/*----------------ESTILO DE CONTACTO-----------------------*/
+.seccion-contacto {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  min-width: auto;
+  margin: 30px; }
+  .seccion-contacto .caja {
+    border: #cab38534 solid 8px;
+    border-radius: 15px;
+    background-color: #f3dab527;
+    color: #fcfbfbd5;
+    overflow: hidden;
+    width: 450px;
+    height: 500px;
+    margin: 10px; }
+    .seccion-contacto .caja h3 {
+      color: #fcfbfbd5;
+      text-align: center;
+      padding: 5px; }
+    .seccion-contacto .caja p {
+      color: #fcfbfbd5;
+      text-align: left;
+      font-weight: 600;
+      margin: 5px; }
+    .seccion-contacto .caja input {
+      display: block;
+      margin: 10px;
+      padding: 5px;
+      min-width: 400px;
+      background-image: linear-gradient(to left, #e2d4c2e8, #a87b274d, #af7b3f7e);
+      border: #cab38534 solid 1px;
+      border-radius: 0.3rem; }
+      .seccion-contacto .caja input::placeholder {
+        color: #94928f;
+        font-weight: 600; }
+      .seccion-contacto .caja input:focus {
+        color: #fcfbfbd5;
+        font-weight: 500; }
+    .seccion-contacto .caja textarea {
+      display: block;
+      margin-top: 10px;
+      margin-left: 8px;
+      background-image: linear-gradient(to left, #e2d4c2e8, #a87b274d, #af7b3f7e);
+      border: #cab38534 solid 1px;
+      border-radius: 0.3rem;
+      width: 400px;
+      height: 200px; }
+      .seccion-contacto .caja textarea::placeholder {
+        color: #94928f;
+        font-weight: 600;
+        padding: 5px; }
+      .seccion-contacto .caja textarea:focus {
+        color: #fcfbfbd5;
+        font-weight: 600;
+        padding: 5px; }
+    .seccion-contacto .caja .btn {
+      margin: 8px;
+      color: #353131;
+      background-image: linear-gradient(to right, #e2d4c2e8, #a87b274d, #af7b3f7e);
+      border-color: #91633738;
+      min-width: 100px; }
+      .seccion-contacto .caja .btn:hover {
+        color: #fcfbfbd5;
+        background-color: #bb9571b8;
+        scale: 1.1;
+        box-shadow: 2px 2px 4px #444141; }
+    .seccion-contacto .caja iframe {
+      margin: 10px; }
+
+/*----------------MQ-----------------*/
+@media (max-width: 700px) {
+  header nav ul {
+    flex-direction: column;
+    font-size: 12px; }
+    header nav ul li {
+      padding: 6px; }
+  footer {
+    flex-direction: column;
+    justify-content: center; }
+    footer div {
+      flex-direction: row;
+      align-items: baseline; }
+      footer div .icono {
+        width: 20px;
+        height: 20px; } }
+
+@media (max-width: 500px) {
+  .presentacion {
+    margin: 25px;
+    margin-top: 80px; }
+    .presentacion h1 {
+      font-size: 19px;
+      padding: 15px; }
+    .presentacion h3,
+    .presentacion p {
+      font-size: 17px; }
+  .main-trayectoria h1 {
+    font-size: 19px;
+    padding: 15px; }
+  .main-trayectoria section {
+    flex-direction: column; }
+    .main-trayectoria section #doctorcita {
+      width: 220px;
+      height: 280px; }
+  .main-especialidad h1 {
+    font-size: 19px; }
+  .rama-esp {
+    flex-direction: column; }
+    .rama-esp h2 {
+      font-size: 17px; }
+  .h1-pro {
+    font-size: 19px; }
+  .card-body h5,
+  .card-body a {
+    font-size: 16px; }
+  .main-contacto h1 {
+    font-size: 19px; }
+  .seccion-contacto .caja {
+    border: solid 5px #cab38593;
+    width: 250px;
+    height: 350px; }
+    .seccion-contacto .caja h3 {
+      font-size: 16px; }
+    .seccion-contacto .caja p {
+      font-size: 14px; }
+    .seccion-contacto .caja input {
+      min-width: 215px;
+      padding: 0; }
+    .seccion-contacto .caja textarea {
+      width: 216px;
+      height: 150px; }
+    .seccion-contacto .caja iframe {
+      margin-left: 5px;
+      width: 250px;
+      height: 200px; } }

@@ -1,0 +1,24 @@
+/*---------------ESTILO DEL INDEX-------------------*/
+
+.presentacion {
+
+    border: map-get($colores, "border") 5px solid;
+    background-color: map-get($colores, "back");
+    text-align: center;
+    margin: 45px;
+    margin-top: 100px;
+
+    h1 {        
+        padding: 30px;
+       
+    }
+    h3 {
+        color:map-get($colores, "letras");
+    }
+
+    p {
+        color:map-get($colores, "letras");
+        font-style: oblique;
+        padding: 25px;
+    }
+}

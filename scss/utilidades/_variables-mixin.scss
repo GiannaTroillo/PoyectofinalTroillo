@@ -1,0 +1,48 @@
+$gradiente-1: linear-gradient(to right, #e2d4c2e8, #a87b274d, #af7b3f7e);
+$gradiente-2: linear-gradient(to left, #e2d4c2e8, #a87b274d, #af7b3f7e);
+$colores: (
+    "letras":#fcfbfbd5,
+    "h1-prod":#94928f,
+    "letras-acor-prod":#b3876a,
+    "back":#f3dab527,
+    "border":#cab38534,
+    "back-grid":#f3eee99a,
+);
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.back-principal {
+    background-image: url(../recursos/pecas.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@mixin grid {
+    margin: 10px;
+    width: 400px;
+    height: 350px;
+    background-color: map-get($colores, "back-grid");
+}
+
+@mixin imagen-esp {
+    margin: 5px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.5s;
+
+    &:hover {
+        scale: 1.1;
+    }
+}
+
+@mixin flex($direction, $j-c, $a-i) {
+    display: flex;
+    flex-direction: $direction; //    
+    justify-content: $j-c;
+    align-items: $a-i;
+}

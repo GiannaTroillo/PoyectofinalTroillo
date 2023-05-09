@@ -1,0 +1,100 @@
+/*----------------ESTILO DE CONTACTO-----------------------*/
+
+.seccion-contacto {
+    @include flex (row, space-around, null);
+    flex-wrap: wrap;
+    min-width: auto;
+    margin: 30px;
+
+    .caja {
+        border: map-get($colores, "border")solid 8px;
+        border-radius: 15px;
+        background-color: map-get($colores, "back");
+        color: map-get($colores, "letras");
+        overflow: hidden;
+        width: 450px;
+        height: 500px;
+        margin: 10px;
+
+        h3 {
+            color: map-get($colores, "letras");
+            text-align: center;
+            padding: 5px;
+        }
+
+        p {
+            color: map-get($colores, "letras");
+            text-align: left;
+            font-weight: 600;
+            margin: 5px;
+        }
+
+        input {
+            display: block;
+            margin: 10px;
+            padding: 5px;
+            min-width: 400px;
+            background-image: $gradiente-2;
+            border: map-get($colores, "border") solid 1px;
+            border-radius: 0.3rem;
+
+            &::placeholder {
+                color: map-get($colores , "h1-prod");
+                font-weight: 600;
+            }
+
+            &:focus {
+                color: map-get($colores, "letras");
+                font-weight: 500;
+            }
+
+
+        }
+
+        textarea {
+            display: block;
+            margin-top: 10px;
+            margin-left: 8px;
+            background-image: $gradiente-2;
+            border: map-get($colores, "border") solid 1px;
+            border-radius: 0.3rem;
+            width: 400px;
+            height: 200px;
+
+            &::placeholder {
+                color: map-get($colores , "h1-prod");
+                
+                font-weight: 600;
+                padding: 5px;
+            }
+
+            &:focus {
+                color: map-get($colores, "letras");
+                font-weight: 600;
+                padding: 5px;
+            }
+        }
+
+        .btn {
+            margin: 8px;
+            color: #353131;
+            background-image: $gradiente-1;
+            border-color: #91633738;
+
+            min-width: 100px;
+
+            &:hover {
+                color: map-get($colores, "letras");
+                background-color: #bb9571b8;
+                scale: 1.1;
+                box-shadow: 2px 2px 4px #444141;
+            }
+
+        }
+
+        iframe {
+            margin: 10px;
+
+        }
+    }
+}
