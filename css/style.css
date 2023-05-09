@@ -207,6 +207,76 @@ footer {
       grid-area: imagen12;
       background-image: url(../recursos/labios.jpg); }
 
+/*------------ESTILO DE PRODUCTOS--------*/
+.carousel-caption h2 {
+  color: #fcfbfbd5;
+  font-weight: 900; }
+
+.carousel-caption h3 {
+  color: #fcfbfbd5;
+  font-weight: 800; }
+
+.h1-pro {
+  color: #94928f;
+  background-image: linear-gradient(to right, #e2d4c2e8, #a87b274d, #af7b3f7e);
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+  text-shadow: 3px 1px 2px #3b3939;
+  margin: 15px;
+  box-shadow: 10px 10px 5px #bdb5a69c; }
+
+.productos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: flex-end;
+  flex-wrap: wrap; }
+  .productos .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+    transition: 0.5s; }
+    .productos .card:hover {
+      scale: 1.01;
+      box-shadow: 2px 2px 10px #a89595;
+      transition: 0.5s; }
+    .productos .card .btn {
+      margin: 8px;
+      color: #353131;
+      background-image: linear-gradient(to right, #e2d4c2e8, #a87b274d, #af7b3f7e);
+      border-color: #91633738; }
+      .productos .card .btn:hover {
+        color: #fcfbfbd5;
+        background-image: linear-gradient(to left, #e2d4c2e8, #a87b274d, #af7b3f7e);
+        font-weight: 600;
+        scale: 1.1;
+        box-shadow: 2px 2px 5px #444141; }
+
+.accordion {
+  background-color: #cab38534;
+  padding: 8px; }
+  .accordion article {
+    background-image: linear-gradient(to left, #e2d4c2e8, #a87b274d, #af7b3f7e);
+    margin: 20px; }
+    .accordion article .accordion-button {
+      background-color: #efd2c554;
+      color: #b3876a;
+      font-weight: 900; }
+      .accordion article .accordion-button:hover {
+        color: #fcfbfbd5;
+        box-shadow: 0 5px 5px #807b739c; }
+      .accordion article .accordion-button:focus {
+        box-shadow: 0 5px 5px #807b739c; }
+    .accordion article .accordion-button:not(.collapsed) {
+      background-image: linear-gradient(to left, #e2d4c2e8, #a87b274d, #af7b3f7e);
+      color: #fcfbfbd5; }
+    .accordion article .accordion-body {
+      color: #94928f;
+      font-weight: 700; }
+
 /*----------------ESTILO DE CONTACTO-----------------------*/
 .seccion-contacto {
   display: flex;
