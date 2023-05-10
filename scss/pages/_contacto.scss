@@ -47,9 +47,11 @@
                 color: map-get($colores, "letras");
                 font-weight: 500;
             }
-
-
         }
+        .btn {
+            min-width: 90px;
+        }
+
 
         textarea {
             display: block;
@@ -63,7 +65,7 @@
 
             &::placeholder {
                 color: map-get($colores , "h1-prod");
-                
+
                 font-weight: 600;
                 padding: 5px;
             }
@@ -73,23 +75,6 @@
                 font-weight: 600;
                 padding: 5px;
             }
-        }
-
-        .btn {
-            margin: 8px;
-            color: #353131;
-            background-image: $gradiente-1;
-            border-color: #91633738;
-
-            min-width: 100px;
-
-            &:hover {
-                color: map-get($colores, "letras");
-                background-color: #bb9571b8;
-                scale: 1.1;
-                box-shadow: 2px 2px 4px #444141;
-            }
-
         }
 
         iframe {

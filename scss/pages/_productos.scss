@@ -39,26 +39,30 @@
             transition: 0.5s;
         }
 
-        .btn {
-            margin: 8px;
-            color: #353131;
-            background-image: $gradiente-1;
-            border-color: #91633738;
+        .card-body {
+            @include flex(column, null, center);
 
-            &:hover {
-               color: map-get($colores, "letras");
-                background-image: $gradiente-2;
-                font-weight: 600;
-                scale: 1.1;
-                box-shadow: 2px 2px 5px #444141;
+            .btn {
+                margin: 8px;
+                color: #353131;
+                background-image: $gradiente-1;
+                border-color: #91633738;
+                width: 80px;
+
+                &:hover {
+                    color: map-get($colores, "letras");
+                    background-image: $gradiente-2;
+                    font-weight: 600;
+                    scale: 1.1;
+                    box-shadow: 2px 2px 5px #444141;
+                }
             }
-
         }
     }
 }
 
 .accordion {
-    background-color:map-get($colores, "border");
+    background-color: map-get($colores, "border");
     padding: 8px;
 
     article {
