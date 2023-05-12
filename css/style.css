@@ -3,7 +3,7 @@
   padding: 0; }
 
 .back-principal {
-  background-image: url(../recursos/pecas.jpg);
+  background-image: url(../recursos/rsz_pecas.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -324,6 +324,12 @@ footer {
         font-weight: 500; }
     .seccion-contacto .caja .btn {
       min-width: 90px; }
+      .seccion-contacto .caja .btn:hover {
+        color: #fcfbfbd5;
+        background-image: linear-gradient(to right, #e2d4c2e8, #a87b274d, #af7b3f7e);
+        font-weight: 600;
+        scale: 1.1;
+        box-shadow: 2px 2px 5px #444141; }
     .seccion-contacto .caja textarea {
       display: block;
       margin-top: 10px;

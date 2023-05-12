@@ -50,6 +50,13 @@
         }
         .btn {
             min-width: 90px;
+            &:hover {
+                color: map-get($colores, "letras");
+                background-image: $gradiente-1;
+                font-weight: 600;
+                scale: 1.1;
+                box-shadow: 2px 2px 5px #444141;
+            }
         }
 
 
