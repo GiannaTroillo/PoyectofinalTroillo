@@ -28,10 +28,10 @@ $colores: (
 
 @mixin grid {
     margin: 10px;
-    width: 490px;
+    width: 70%;
     height: 490px;
     background-color: map-get($colores, "back-grid");
-}
+    box-shadow: 5px 5px 5px #1b1b1a9c;}
 
 @mixin imagen-esp {
     margin: 5px;

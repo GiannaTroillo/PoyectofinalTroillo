@@ -26,26 +26,12 @@
             }
         }
     }
-    
-    .main-especialidad {
-        .rama-esp {
-            flex-direction: column;
-
-            .grid-dc,
-            .grid-de {
-                margin: auto;
-                width: 250px;
-                height: 316px;
-            }
-        }
-
-    }
 }
 
 @media(max-width: 500px) {
 
     .presentacion {
-        margin: 25px;
+
         margin-top: 80px;
 
         h1 {
@@ -91,6 +77,16 @@
 
             h5 {
                 font-size: 16px;
+            }
+        }
+
+        .rama-esp {
+            flex-direction: column;
+
+            .grid-dc,
+            .grid-de {
+                flex-direction: column;
+                height: 300px;
             }
         }
     }
@@ -141,9 +137,7 @@
                     width: 250px;
                     height: 200px;
                 }
-
             }
-
         }
     }
 }
