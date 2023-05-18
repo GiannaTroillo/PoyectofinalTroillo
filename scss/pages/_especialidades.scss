@@ -1,114 +1,124 @@
 /*------------------------ESPECIALIDADES----------------------*/
-.rama-esp {
-    @include flex (row, space-around, null);
-    margin: 10px;
+.main-especialidad {
+    .encabezado {
+        background-image: $gradiente-1;
+        box-shadow: 5px 5px 2px #1b1b1a9c;
+        padding: 8px;
+        margin: 40px 10px 20px 10px;
 
-    h2 {
-        color: map-get($colores, "letras");
-        padding: 5px;
-    }
-
-    li {
-        color: map-get($colores, "letras");
-        list-style: none;
-
-        &:hover {
-            font-weight: 700;
-        }
-    }
-}
-
-.rama-grilla {
-    @include flex (row, space-evenly, null);
-    flex-wrap: wrap;
-
-    .grid-dc {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-areas:
-            "imagen1 imagen2 imagen3"
-            "imagen4 imagen5 imagen6"
-        ;
-        @include grid;
-
-        .imagendc {
-            @include imagen-esp;
-        }
-
-        .imagen1 {
-            grid-area: imagen1;
-            background-image: url(../recursos/lunar.jfif)
-        }
-
-        .imagen2 {
-            grid-area: imagen2;
-            background-image: url(../recursos/melanoma.jpg)
-        }
-
-        .imagen3 {
-            grid-area: imagen3;
-            background-image: url(../recursos/pso.jfif)
-        }
-
-        .imagen4 {
-            grid-area: imagen4;
-            background-image: url(../recursos/alopecia.jfif)
-        }
-
-        .imagen5 {
-            grid-area: imagen5;
-            background-image: url(../recursos/acne.jfif)
-        }
-
-        .imagen6 {
-            grid-area: imagen6;
-            background-image: url(../recursos/micosis.jfif)
+        h2,
+        h5 {
+            margin: 20px;
+            color: map-get($colores, "letras");
+            padding: 5px;
+            text-align: center;
         }
     }
 
-    .grid-de {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-areas:
-            "imagen7 imagen8 imagen9"
-            "imagen10 imagen11 imagen12"
-        ;
-        @include grid;
+    .rama-esp {
+        @include flex (row, space-evenly, center);
+        flex-wrap: wrap;
+        margin: 15px;
 
-        .imagende {
-            @include imagen-esp;
+        li {
+            color: map-get($colores, "letras");
+            list-style: none;
+            padding: 8px;
+
+            &:hover {
+                font-weight: 700;
+            }
         }
 
-        .imagen7 {
-            grid-area: imagen7;
-            background-image: url(../recursos/peeling-fac.jfif)
+        .grid-dc {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas:
+                "imagen1 imagen2 imagen3"
+                "imagen4 imagen5 imagen6"
+            ;
+            @include grid;
+
+            .imagendc {
+                @include imagen-esp;
+            }
+
+            .imagen1 {
+                grid-area: imagen1;
+                background-image: url(../recursos/rsz_acne.jpg)
+            }
+
+            .imagen2 {
+                grid-area: imagen2;
+                background-image: url(../recursos/rsz_micosis.jpg)
+            }
+
+            .imagen3 {
+                grid-area: imagen3;
+                background-image: url(../recursos/rsz_psoriasis.jpg)
+            }
+
+            .imagen4 {
+                grid-area: imagen4;
+                background-image: url(../recursos/rsz_alopecia.jpg)
+            }
+
+            .imagen5 {
+                grid-area: imagen5;
+                background-image: url(../recursos/rsz_lunar.jpg)
+            }
+
+            .imagen6 {
+                grid-area: imagen6;
+                background-image: url(../recursos/rsz_melanoma.jpg)
+            }
         }
 
-        .imagen8 {
-            grid-area: imagen8;
-            background-image: url(../recursos/btx.jpg)
-        }
+        .grid-de {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas:
+                "imagen7 imagen8 imagen9"
+                "imagen10 imagen11 imagen12"
+            ;
+            @include grid;
 
-        .imagen9 {
-            grid-area: imagen9;
-            background-image: url(../recursos/abdo.jpg)
-        }
+            .imagendc {
+                @include imagen-esp;
+            }
 
-        .imagen10 {
-            grid-area: imagen10;
-            background-image: url(../recursos/arm-fac.jpg)
-        }
+            .imagen7 {
+                grid-area: imagen7;
+                background-image: url(../recursos/peeling-fac.jfif)
+            }
 
-        .imagen11 {
-            grid-area: imagen11;
-            background-image: url(../recursos/tres-2.jpg)
-        }
 
-        .imagen12 {
-            grid-area: imagen12;
-            background-image: url(../recursos/labios.jpg)
+            .imagen8 {
+                grid-area: imagen8;
+                background-image: url(../recursos/btx.jpg)
+            }
+
+            .imagen9 {
+                grid-area: imagen9;
+                background-image: url(../recursos/arm-fac.jpg)
+            }
+
+            .imagen10 {
+                grid-area: imagen10;
+                background-image: url(../recursos/labios.jpg)
+            }
+
+            .imagen11 {
+                grid-area: imagen11;
+                background-image: url(../recursos/abdo.jpg)
+            }
+
+            .imagen12 {
+                grid-area: imagen12;
+                background-image: url(../recursos/tres-2.jpg)
+            }
         }
     }
 }

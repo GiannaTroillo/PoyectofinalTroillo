@@ -69,10 +69,20 @@ footer {
     @include flex(row, space-around, center);
     flex-wrap: wrap;
 
+    .wts {
+        width: 65px;
+        
+        position: fixed;
+        bottom: 5px;
+        right: 30px;
+
+    }
+
     div {
         @include flex(column, null, center);
 
         p {
+            padding: 10px;
             &:hover {
                 font-weight: 600;
                 scale: 1.05;
@@ -80,6 +90,7 @@ footer {
         }
 
         .icono {
+            margin: 8px;
             width: 30px;
             height: 30px;
 

@@ -6,14 +6,12 @@ $colores: (
     "letras-acor-prod":#b3876a,
     "back":#f3dab527,
     "border":#cab38534,
-    "back-grid":#f3eee99a,
-);
+    "back-grid":#f3eee99a,);
 
 * {
     margin: 0;
     padding: 0;
 }
-
 .back-principal {
     background-image: url(../recursos/rsz_pecas.jpg);
     background-position: center;
@@ -21,10 +19,17 @@ $colores: (
     background-size: cover;
 }
 
+@mixin flex($direction, $j-c, $a-i) {
+    display: flex;
+    flex-direction: $direction; //    
+    justify-content: $j-c;
+    align-items: $a-i;
+}
+
 @mixin grid {
     margin: 10px;
-    width: 400px;
-    height: 350px;
+    width: 490px;
+    height: 490px;
     background-color: map-get($colores, "back-grid");
 }
 
@@ -40,9 +45,4 @@ $colores: (
     }
 }
 
-@mixin flex($direction, $j-c, $a-i) {
-    display: flex;
-    flex-direction: $direction; //    
-    justify-content: $j-c;
-    align-items: $a-i;
-}
+
